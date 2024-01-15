@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class MenuService {
 
-  private apiUrl = 'http://49.249.110.2:8050/api/MenuMasters/GetMenuMasterList/173'; // Replace with your API endpoint
+  private apiUrl = 'http://49.249.110.2:8050/api/MenuMasters/GetMenuMasterList/173'; 
 
   constructor(private http: HttpClient) {}
 
