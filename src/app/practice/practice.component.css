@@ -1,0 +1,32 @@
+/* Add this CSS to your styles file or component */
+
+.parent {
+    margin-bottom: 10px;
+  }
+  
+  .parent p {
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .child {
+    margin-left: 20px;
+  }
+  
+  .arrow {
+    display: inline-block;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    border: solid;
+    border-width: 0 2px 2px 0;
+  }
+  
+  .down {
+    transform: rotate(45deg);
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+  }
+  

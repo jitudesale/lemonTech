@@ -1,0 +1,26 @@
+
+<p>Practice works!</p>
+<h3>Tree Structure</h3>
+<div class="main">
+  <div *ngFor="let lis of lists; let i = index">
+    <div class="parent">
+      <div (click)="toggleChildVisibility(lis)">
+        <i class="arrow" [ngClass]="{'down': lis.showChildren, 'right': !lis.showChildren}"></i>
+        Parent ID: {{lis.id}}
+      </div>
+      <div *ngIf="lis.showChildren">
+        <div *ngFor="let child of lists; let l = index">
+          <div *ngIf="lis.id === child.refMenuId" class="child">
+            <div (click)="toggleChildVisibility(child)">
+              <i class="arrow" [ngClass]="{'down': child.showChildren, 'right': !child.showChildren}"></i>
+              Child ID: {{child.id}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
